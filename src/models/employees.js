@@ -1,12 +1,12 @@
 import db from '../utils/db'
 
 export const getEmployees = async (skip, take) => {
-    const count = await db.employee.count()
-    const employees = await db.employee.findMany({ 
-        skip,
-        take,
-    })
-    return { count, employees }
+  const count = await db.employee.count()
+  const employees = await db.employee.findMany({
+    skip,
+    take,
+  })
+  return { count, employees }
 }
 
 export const getEmployee = async (id) =>

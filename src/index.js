@@ -30,4 +30,5 @@ const port = parseInt(process.env.PORT, 10) || 3000
 
 
 
-app.listen(port, ()=>logger.info('Application started at http://localhost:${process.env.PORT'))
+app.listen(port, () => 
+    logger.info(`Server running port ${port}`))
