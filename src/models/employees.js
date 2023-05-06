@@ -6,7 +6,7 @@ export const getEmployees = async (skip, take) => {
         skip,
         take,
     })
-    return { count, employee }
+    return { count, employees }
 }
 
 export const getEmployee = async (id) =>
